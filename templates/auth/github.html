@@ -1,4 +1,40 @@
 {% extends 'base/base.html' %}
 {% load staticfiles %}
 
-{% block title %}Github | Connect{% endblock %}
+{% block title %}Linkedin | Connect{% endblock %}
+{% block extrahead %}
+<style type="text/css">
+    body {
+        background: #ddd;
+    }
+    .github-container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        padding-top: 5px;
+        margin-top: 10%;
+    }
+    .btn-secondary {
+        background: #333;
+        color: #fff;
+    }
+    .btn-secondary:hover {
+        color: #fff;
+        background: #555;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4 col-md-offset-4 github-container">
+        <h3 class="lead text-center">Connect your Github account</h3>
+        <button class="btn btn-secondary center-block">
+            <span class="fa fa-github"></span>
+            &nbsp;&nbsp;Connect with Github
+        </button>
+    </div>
+</div>
+{% endblock %}
+
+{% block extrascripts %}
+{% endblock %}
